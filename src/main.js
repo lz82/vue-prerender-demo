@@ -8,7 +8,9 @@ const app = new Vue({
   el: '#app',
   router,
   render: h => h(App),
-  mounted () {}
+  mounted () {
+    document.dispatchEvent(new Event('render-event'))
+  }
 })
 
 app.$mount('#app')
