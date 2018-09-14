@@ -45,8 +45,8 @@ const config = WebpackMerge(baseConfig, {
     routes: ['', '/home', '/about'],
     renderer: new Renderer({
       renderAfterTime: 5000,
-      headless: false,
-      renderAfterDocumentEvent: 'render-event'
+      headless: true,
+      // renderAfterDocumentEvent: 'render-event'
     })
   })
   ]

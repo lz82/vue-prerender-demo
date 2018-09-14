@@ -25,9 +25,7 @@
           this.url = res.data.url
           console.log('----------------------------------------------------------------------------')
           console.log('res.data')
-          this.$nextTick(() => {
-            document.dispatchEvent(new Event('render-event'))
-          })
+          document.dispatchEvent(new Event('render-event'))
         })
       // })
     }
