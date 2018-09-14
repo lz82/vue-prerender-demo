@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+// const HomePage = () => import('pages/home')
+import HomePage from 'pages/home'
+// const AboutPage = () => import('pages/about')
+import AboutPage from 'pages/about'
+
 Vue.use(VueRouter)
-
-const HomePage = () => import('pages/home')
-
-const AboutPage = () => import('pages/about')
 
 const routes = [
   {

@@ -43,9 +43,9 @@ const config = WebpackMerge(baseConfig, {
   new PrerenderSpaPlugin({
     staticDir: path.resolve(__dirname, '../dist'),
     routes: ['', '/home', '/about'],
-    render: new Renderer({
+    renderer: new Renderer({
       renderAfterTime: 5000,
-      headless: true,
+      headless: false,
       renderAfterDocumentEvent: 'render-event'
     })
   })
